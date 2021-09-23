@@ -1,0 +1,1058 @@
+﻿<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>MHSS Trust | Home </title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Alor Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+
+<!--mail sending ajex call -->
+<script>
+		function sendmail()
+			{
+
+				var xmlhttp;
+				var name=document.getElementById("name").value;
+				var subject=document.getElementById("subject").value;
+				var message=document.getElementById("message").value;
+				var email=document.getElementById("email").value;
+				var mno=document.getElementById("mno").value;
+
+				if (window.XMLHttpRequest)
+				  {// code for IE7+, Firefox, Chrome, Opera, Safari
+				  xmlhttp=new XMLHttpRequest();
+				  }
+				else
+				  {// code for IE6, IE5
+				  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				  }
+
+
+				xmlhttp.onreadystatechange=function()
+				  {
+				  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+					{
+					document.getElementById("divmailreply").innerHTML=xmlhttp.responseText;
+					}
+				  }
+
+
+				xmlhttp.open("GET","sendmail.php?name="+name+"&subject="+subject+"&message="+message+"&email="+email+"&mno="+mno,true);
+				xmlhttp.send();
+			}
+</script>
+
+<script>
+		function savedonation()
+			{
+
+				var xmlhttp;
+				var dname=document.getElementById("dname").value;
+				var damount=document.getElementById("damount").value;
+				var dmessage=document.getElementById("dmessage").value;
+				var demail=document.getElementById("demail").value;
+				var dmno=document.getElementById("dmno").value;
+
+				if (window.XMLHttpRequest)
+				  {// code for IE7+, Firefox, Chrome, Opera, Safari
+				  xmlhttp=new XMLHttpRequest();
+				  }
+				else
+				  {// code for IE6, IE5
+				  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				  }
+
+
+				xmlhttp.onreadystatechange=function()
+				  {
+				  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+					{
+					document.getElementById("divdonation").innerHTML=xmlhttp.responseText;
+					}
+				  }
+
+
+				xmlhttp.open("GET","savedonation.php?dname="+dname+"&damount="+damount+"&dmessage="+dmessage+"&demail="+demail+"&dmno="+dmno,true);
+				xmlhttp.send();
+			}
+</script>
+
+<style type="text/css">
+@font-face {
+ font-family: Kruti_Dev_010;
+ src: url(fonts/k010.TTF);
+}
+
+.hindi_para_css {
+	font-family: "Kruti_Dev_010";
+	font-size: 24px;
+	text-align: justify;
+	font-weight: bold;
+}
+	</style>
+
+</head>
+
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=" " height="90px"/></a>
+			</div>
+			<div class="logo-right">
+				<span class="menu"><img src="images/menu.png" alt=" "/></span>
+					<ul class="nav1">
+						<li class="cap"><a href="index.html" class="act"><b>Home</b></a></li>
+						<!--li><a href="#history" class="scroll">History</a></li-->
+						<li><a href="#about" class="scroll">About Us</a></li>
+						<!--li><a href="#activities" class="scroll">Activities</a></li>
+						<li><a href="#childrens" class="scroll">Childrens</a></li>
+						<li><a href="#team" class="scroll">Team Member</a></li>
+						<li><a href="#news" class="scroll">News</a></li-->
+						<li><a href="#donateinfo" class="scroll">Donate us</a></li>
+						<li><a href="#contact" class="scroll">Contact</a></li>
+						<li><a href="portofolio/index.html" target="_blank">Portofolio</a></li>
+                        <!----<li><a href="administor_login.html">login</a></li>
+					</ul>
+			</div>
+			<div class="clearfix"> </div>---->
+			<!-- script for menu -->
+					<script>
+						$( "span.menu" ).click(function() {
+						$( "ul.nav1" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+				<!-- //script for menu -->
+		</div>
+	</div>
+<!-- //header -->
+<!-- banner -->
+	<div class="banner">
+		<div class="container">
+<!-- Slider-starts-Here -->
+				<script src="js/responsiveslides.min.js"></script>
+				 <script>
+				    // You can also use "$(window).load(function() {"
+				    $(function () {
+				      // Slideshow 4
+				      $("#slider3").responsiveSlides({
+				        auto: true,
+				        pager: false,
+				        nav: true,
+				        speed: 500,
+				        namespace: "callbacks",
+				        before: function () {
+				          $('.events').append("<li>before event fired.</li>");
+				        },
+				        after: function () {
+				          $('.events').append("<li>after event fired.</li>");
+				        }
+				      });
+
+				    });
+				  </script>
+			<!--//End-slider-script -->
+			<div  id="top" class="callbacks_container wow fadeInUp" data-wow-delay="0.5s">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="banner-info">
+							<h1><font color="red">WELCOME TO MAHARSHI HARIRAM SARAN SASHTRI EDUCATIONAL & SOCIAL TRUST</font></h1>
+							<a href="#" class="hvr-bounce-to-right read">Read More</a>
+						</div>
+					</li>
+					<li>
+						<div class="banner-info">
+							<h1><font color="red">WELCOME TO CHARITY WELFARE</font></h1>
+							<a href="#" class="hvr-bounce-to-right read">Read More</a>-->
+						</div>
+					</li>
+					<li>
+						<div class="banner-info">
+							<h1><font color="red">WELCOME TO SOCIAL SERVICES</font></h1>
+							<a href="#" class="hvr-bounce-to-right read">Read More</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="banner-bottom-grids">
+				<div class="forced">
+					<p>"Let every children forced to be on street have education."</p>
+				</div>
+				<div class="donate">
+					<div class="Alor">
+						<p>–Promod Kumar Jha</p>
+					</div>
+					<div class="us">
+
+						<a href="#donateinfo" class="hvr-bounce-to-right read" class="scroll">Donate Us</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- lorum -->
+	<div class="lorum">
+		<div class="container">
+			<div class="lorum-info">
+				<h3>Children are the future asset.
+					<span>Let's saves it.</span></h3>
+			</div>
+		</div>
+	</div>
+<!-- //lorum -->
+<!-- about -->
+	<div id="about" class="about">
+		<div class="container">
+			<h3>ABOUT US</h3>
+			<div class="about-top-text">
+				<p>&nbsp;"We believe in a world where no child ever has to live on the streets"</p>
+			</div>
+			<p class="hindi_para_css">Jh Jh 108 egf&rsquo;kZ gfjjke &ldquo;kj.k &ldquo;kkL=h th egkjkt vk|txrxq# ijEijk esa 20 oha &ldquo;krkCnh ds m&Ugrave;kjk)Z ds fl) lUrksa esa loZJs&rsquo;B fl)lUr jgs gSaA egf&rsquo;kZ vius vkjk/; Jh lhrkjketh] dh mikluk ckY;kdky ls gh djrs jgs gSaA mUgksus Jh guqeku th dh ije&Ntilde;ik ls Js&rsquo;B ;K] ti&amp;ri Hkh fd;s gSaA egf&rsquo;kZ vius xq#th Jh Jh 1008 vuUr Jh foHkwf&rsquo;kr Jh fl;kj/kqukFk&rdquo;kj.k th egkjkt }kjk v;ks/;k ds pkyhl o&rsquo;kksZa rd] ikBk/kh&rdquo;oj jgs gSaA fiNys pkj n&rdquo;kdksa ls egf&rsquo;kZ&nbsp; blh LFkku ij fo&rdquo;odY;k.k gsrq riL;k djrs jgsA vkt fo&rdquo;o esa egf&rsquo;kZ ds yk[kksa f&rdquo;k&rsquo;; xq# vk&rdquo;khokZn ls vius &amp;vius dk;Z {ks= esa loksZPp inksa ij vklhu gSaA mudh &Ntilde;ik ls lkalkfjd thou dks lgtrk iwodZ O;rhr dj jgs gSaA f&rdquo;k{kk vuqjkfx;ksa ij egf&rsquo;kZ dh vlhe &Ntilde;ik jgrh gSA egf&rsquo;kZ vius fnO; n`f&rsquo;V ls lexz lapkyu dks fu;af=r djrs gaSA fo&rdquo;o dY;k.k ds fy, egf&rsquo;kZ }kjk izfrikfnr uSfrd vk/;kfRed f&rdquo;k{k.k i)fr vius vki esa vHkwriwoZ n&rdquo;kZu gSA</p>
+
+						<p class="hindi_para_css">vkbZ;s! ge lc feydj bl n&rdquo;kZu dks fo&rdquo;o dY;k.k gsrq dk;Z#i iznku djas ,oa ekuoek= esa O;kIr vf&rdquo;k{kk #ih nSR; dks Hkkjr ,oa fo&rdquo;o ls lekIr djus esa viuk &amp; viuk ;ksxnku nsaA<br />
+						</p>
+
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Oval: U;kl" height="48" src="About Trust_clip_image001.gif" width="139" /></p>
+						<p class="hindi_para_css">  <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^^bg psn&rdquo;kdn~ cks)a izkd &ldquo;kjhjL; fo&oacute;%A</b>
+						<b>rr% lxs&rsquo;kq yksds&rsquo;kq &ldquo;kjhjRok; dYirsAA^^</b></p>
+						<p><span class="hindi_para_css">^^bl nso nqyHkZ ekuo nsg dks izkIr dj blds iru gksus ds iwoZ gh ftl oLrq dks tkuuk pkfg,] mls tku fy;k rks dq&rdquo;ky gS] ugha rks fQj vusd dYiksa rd fofHkUu yksdksa ,oa ;ksfu;ksa esa fuos&rdquo;k gksdj &ldquo;kjhj /kkj.k djuk iM+sxk ghA blfy, ekuo dk d&Ugrave;kZO; gks tkrk gS fd e`R;q ls igys gh ml ije rRo &frac14;ijekRek&frac12; dks igpku ysA</span></p>
+
+						<p></p>
+
+						<p class="hindi_para_css">Ekgf&rsquo;kZ gfjjke&rdquo;kj.k &ldquo;kkL=h &ldquo;kS{kf.kd ,oa lkekftd U;kl dh LFkkiuk Jh xq#th }kjk izfrikfnr fof&rdquo;k&rsquo;V &ldquo;kS{kf.kd n&rdquo;kZu&amp; fpUru dks dk;Z#i nsus ds fy, dh xbZ gSA U;kl ds }kjk jk&rsquo;V&ordf;h; vkSj vUrjkZ&rsquo;V&ordf;h; f&rdquo;k{kk ds ekSfyd ,oa izkphu Js&rsquo;Brk dks iquLFkkZiuk djus dk iz;kl izkjEHk dj fn;k gSA U;kl dks muds egkifj&rsquo;kn~ ,oa &ldquo;kS{kf.kd n`f&rsquo;Vdks.k lfefr fo|k ifj&rsquo;kn }kjk 2005 bZ&aring; ds fy, rS;kj fd;s x;s O;kolkf;d ,oa jkstxkjksUeq[kh f&rdquo;k{kk ds foLrkj dk fu.kZ; fy;k gSA rnuq#i jk&rsquo;V&ordf;h; Lrj ds fo&rdquo;ofo|ky; ls lEc)rk izkIr dj fo&rdquo;ofo|ky; }kjk fu/kkZfjr dk;Z&Oslash;eksa ,oa f&rdquo;k{k.k&amp; &ldquo;kqYd ds vk/kkj ij ns&rdquo;k ds fofHkUu ftyksa esa xzkeh.k Nk=ksa gsrq mPpLrjh; f&rdquo;k{kk jk&rsquo;V&ordf;h; &ldquo;kS{kf.kd ekin.M dks vk/kkj ekudj lqyHk djk;sxh tks fo&rdquo;ofo|ky; vuqnku vk;ksx }kjk izekf.kr gksxkA</p>
+
+						<p class="hindi_para_css">1&frac12; fo|kfFkZ;ksa ds fy, mPpLrjh; f&rdquo;k{kk dks lqyHk cukus gsrq ijh{kk dk vk;kstu dj i=dkfjrk ,oa lwpuk izkS|ksfxd ds nl Nk=ksa dks<br />
+						&nbsp;&nbsp;&nbsp;es/kk Nk= o`f&Ugrave;k nsrh gSA<br /></p>
+						<p class="hindi_para_css">2&frac12; U;kl izR;sd laLFkku esa ,d Lrjh; iqLrdky; ,oa okpuky; pyk,xhA<br /></p>
+						<p class="hindi_para_css">3&frac12; U;kl }kjk lapkfyr dEI;wVj vuqiz;ksx dh laLFkkuksa esa dEI;wVj dh iz;ksx&rdquo;kkyk gksxsaA tks lwpuk lapkj ds {ks= esa Lrjh; gksxkA<br /></p>
+						<p class="hindi_para_css">4&frac12; jk&rsquo;V&ordf;h; Lrj ds [;kfr izkIr fo}kuksa&nbsp; }kjk le;&amp; le; ij fo|kfFkZ;ksa ds &ldquo;kS{kf.kd fodkl gsrq ijke&rdquo;kZ Hkh fn;s tk;saxsA<br /></p>
+						<p class="hindi_para_css">5&frac12; U;kl vius laLFkkuksa esa lapkfyr ikB~;&Oslash;eksa ls lacaf/kr fo&rdquo;ks&rsquo;kKksa] fo}kuksa dks vfrfFk O;k[;krk ds #i esa vkeaf=r djsxkA<br /></p>
+						<p class="hindi_para_css">6&frac12; U;kl vius laLFkku ds fo|kfFkZ;ksa dk jkstxkj gsrq ekxZn&rdquo;kZu nsrh gSA lkFk gh jkstxkj nsus okyh ,tsalh ls lEidZ lw= Hkh tksM+rh
+						&nbsp;&nbsp;&nbsp;gSA<br /></p>
+
+						<p  class="hindi_para_css">7&frac12; U;kl ls lapkfyr laLFkku ds izR;sd lsesLVj esa lokZsPp vad izkIr djus okys fo|kfFkZ;ksa dks ,d fd&rdquo;r dk f&rdquo;k{k.k &ldquo;kqYd esa lg;ksx<br /></p>
+						<p class="hindi_para_css">&nbsp;&nbsp;&nbsp;U;kl }kjk fn;k tk,xkA<br /></p>
+						
+						<p class="hindi_para_css">8&frac12; U;kl vkfnoklh fo|kfFkZ;ksa ds fodkl gsrq fo&rdquo;ks&rsquo;k ;kstukvksa dk lapkyu le;&amp;le; ij djrh gS] rFkk vkfnoklh cU/kqvksa ds fy,<br /></p>
+						<p class="hindi_para_css">&nbsp;&nbsp;&nbsp;LFkku vkjf{kr djrh gSA<br /></p>
+
+						<p class="hindi_para_css">9&frac12; U;kl xq#th ds uke ls izR;sd o&rsquo;kZ 10 es/kkoh fo|kfFkZ;ksa&nbsp; dks fu%&rdquo;kqYd f&rdquo;k{kk nsrh gS rFkk U;kl }kjk lapkfyr laLFkku ds ,sls&nbsp;&nbsp;&nbsp;<br /></p>
+						      <p class="hindi_para_css">&nbsp;&nbsp;&nbsp;fo|kfFkZ;ksa&nbsp; dks tks fons&rdquo;k esa i&lt;+us ds bPNqd dks vkfFkZd lgk;rk Hkh iznku djrh gSaA<br /></p>
+
+						<p class="hindi_para_css">10&frac12; U;kl }kjk jk&rsquo;V&ordf;h; Lrj ds [;kfr izkIr fo}kuksa }kjk le; le; ij fo|kfFkZ;ksa ds &ldquo;kS{kf.kd fodkl gsrq ijke&rdquo;kZ Hkh fn, tkrs gaSA<br /></p>
+
+						<p class="hindi_para_css">11&frac12; U;kl viuh ;kstukvksa ds vfrfjDr ljdkjh] xSjljdkjh laLFkkvksa dh f&rdquo;k{kk laca/kh ;kstukvksa dk ykHk fo|kfFkZ;ksa rd igq&iexcl;pkus dk<br />
+						&nbsp;&nbsp;&nbsp;iz;kl djrh gSA<br /></p>
+
+						<p class="hindi_para_css">12&frac12; fizUV ehfM;k ,oa bysDV&ordf;kfud ehfM;k ds {ks= esa mRd`&rsquo;V dk;Z ds fy, ;qok i=dkjksa dks ^^ egf&rsquo;kZ gfjjke&rdquo;kj.k lEeku fn;k tk,xk]&nbsp;<br /></p>
+						<p class="hindi_para_css">&nbsp;&nbsp;&nbsp;&nbsp;ftlesa 51 gtkj uxn ,oa iz&rdquo;kLrh izi= iznku fd, tk,axsA<br /></p>
+						<p class="hindi_para_css">13&frac12; U;kl &gt;kj[kaM izns&rdquo;k ds d{kk ukSoha ls Lukrdks&Ugrave;kj ds Nk=ksa ds fy, es/kk Nk=o`f&Ugrave;k nh tk,xh blds fy, o&rsquo;kZ esa ,d ckj ijh{kk<br /></p>
+						<p class="hindi_para_css">&nbsp;&nbsp;&nbsp;&nbsp;vk;ksftr dh tk,xhA<br /></p>
+						
+						<p class="hindi_para_css">14&frac12; U;kl >kj[kaM ,oa fcgkj izns”k esa lwpuk vkSj izkS|ksfxd {ks= esa ;ksxnku nsus okys Nk=ksa dks Hkh ^^ egf’kZ gfjjke“kj.k lEeku^^<br /></p>     
+						<p class="hindi_para_css">&nbsp;&nbsp;&nbsp; Hkh fn;k tk,xk ftlesa 51 gtkj ,oa iz”kLrh i= Hkh   fn;k tk,xkA<br /></p>
+						<p class="hindi_para_css"><strong>&nbsp; Ikz/kku dk;kZy;</strong><br /></p>
+						<p class="hindi_para_css">Jh guqeUr~ lnu] LoxZ }kj&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>lfpo</strong><br /></p>
+						<p class="hindi_para_css">Jh v;ks/;k] QStkckn &frac14;m&aring; iz&aring;&frac12;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Ekgf&rsquo;kZ gfjjke&rdquo;kj.k &ldquo;kkL=h</strong> <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&ldquo;kS{kf.kd ,oa lkekftd U;kl</strong><br /></p>
+			</div>
+	</div>
+<!-- //about -->
+<!-- activities -->
+	<!--div id="activities" class="activities">
+		<div class="container">
+			<h3>OUR ACTIVITIES</h3>
+			<p class="libero">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				In lobortis, ante interdum vehicula pretium, dui enim porta lectus,
+				non euismod tortor ante eu libero. Aenean blandit luctus tortor vitae interdum.
+				Etiam egestas purus lorem, eget tempus odio placerat id. Integer eu gravida nibh.</p>
+			<div class="activities-grids">
+				<div class="col-md-4 activities-grid">
+					<div class="activities-grid-left">
+						<span> </span>
+					</div>
+					<div class="activities-grid-right">
+						<h4>Street Level</h4>
+						<p>At street level we strive to meet the immediate needs of children
+						at risk on the streets and platforms of India today. We have created
+						a number of ‘child friendly stations’ with the help and engagement
+						of the people who work at them, who now look out for and help children
+						alone and at risk.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 activities-grid">
+					<div class="activities-grid-left1">
+						<span> </span>
+					</div>
+					<div class="activities-grid-right">
+						<h4>Community Level</h4>
+						<p>At community level we work to make children on the streets
+						visible to society and to help people understand the issues that
+						cause children to run away and that face them on the streets and
+						on the platforms. We invest time and skills in preventative intervention,
+						with the aim of creating ‘safety nets’ within communities to catch
+						children who are at risk of running away before they do so.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 activities-grid">
+					<div class="activities-grid-left2">
+						<span> </span>
+					</div>
+					<div class="activities-grid-right">
+						<h4>Government Level</h4>
+						<p>At government level we work to persuade policy makers that
+						children living on the streets should be higher on India’s
+						political agenda and that government policies should provide greater
+						protection and opportunity for them</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="history-faq-grids">
+				<div class="col-md-6 history-faq-grid">
+					<h4>Our History</h4>
+					<div class="progress">
+					  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						<span class="sr-only">60% Complete</span>
+					  </div>
+					</div>
+					<div class="sap_tabs">
+						<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+							  <ul class="resp-tabs-list">
+								  <li class="resp-tab-item grid1" aria-controls="tab_item-0" role="tab"><span>2010</span></li>
+								  <li class="resp-tab-item grid2" aria-controls="tab_item-1" role="tab"><span>2011</span></li>
+								  <li class="resp-tab-item grid3" aria-controls="tab_item-2" role="tab"><span>2012</span></li>
+								  <li class="resp-tab-item grid5" aria-controls="tab_item-3" role="tab"><span>2014</span></li>
+								  <div class="clear"></div>
+							  </ul>
+								<div class="resp-tabs-container">
+									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+										<div class="facts">
+										  <ul class="tab_list">
+											<li><a href="#">It is a long established fact that a reader will be distracted by the readable content of a page when
+													looking at its layout.</a></li>
+											<li><a href="#">The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+												of letters readable English</a></li>
+										  </ul>
+										</div>
+									</div>
+									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+										<div class="facts">
+										  <ul class="tab_list">
+											<li><a href="#">The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+												of letters readable English</a></li>
+											<li><a href="#">It is a long established fact that a reader will be distracted by the readable content of a page when
+													looking at its layout.</a></li>
+										  </ul>
+										</div>
+									</div>
+									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+										<div class="facts">
+										  <ul class="tab_list">
+											<li><a href="#">It is a long established fact that a reader will be distracted by the readable content of a page when
+													looking at its layout.</a></li>
+											<li><a href="#">The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+												of letters readable English</a></li>
+										  </ul>
+										</div>
+									</div>
+									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
+										<div class="facts">
+										  <ul class="tab_list">
+											<li><a href="#">The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+												of letters readable English</a></li>
+											<li><a href="#">It is a long established fact that a reader will be distracted by the readable content of a page when
+													looking at its layout.</a></li>
+										  </ul>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-6 history-faq-grid">
+					<h4>Faq</h4>
+					<div class="progress">
+					  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						<span class="sr-only">60% Complete</span>
+					  </div>
+					</div>
+					<div class="faq-info">
+						<div class="eiusmod">
+							<p class="para">Enim eiusmod high life accusamus?</p>
+							<p class="para1">Anim pariatur cliche reprehenderit, enim eiusmod
+							high life accusamus terry richardson ad squid. 3 wolf moon officia
+							aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+							nesciunt laborum.</p>
+						</div>
+						<div class="keffiyeh">
+							<p>Nihil anim keffiyeh helvetica?</p>
+						</div>
+						<div class="butcher">
+							<p>Vegan excepteur butcher vice lomo?</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+ <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion
+				width: 'auto', //auto or any width like 600px
+				fit: true   // 100% fit in a container
+			});
+		});
+	   </script>
+<!-- //activities -->
+<!-- our-childrens -->
+	<!-- div id="childrens" class="our-childrens">
+		<div class="container">
+			<h3>OUR CHILDRENS</h3>
+			<div class="our-childrens-grids">
+				<div class="col-md-3 our-childrens-grid">
+					<a href="images/3.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+						<img class="one" src="images/3.jpg" alt=" " title="Science Laboratory" />
+						<div class="b-wrapper">
+							<h2 class="b-animate b-from-left    b-delay03 ">
+
+								<div class="text-info">
+								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
+									<h4>About Robin</h4>
+									<p>I am Robin.I read In informal school in
+										<span>Dhaka Branch.</span></p>
+								</div>
+							</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 our-childrens-grid">
+					<a href="images/4.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+						<img class="one" src="images/4.jpg" alt=" " title="Science Laboratory" />
+						<div class="b-wrapper">
+							<h2 class="b-animate b-from-left    b-delay03 ">
+
+								<div class="text-info">
+								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
+									<h4>About Robin</h4>
+									<p>I am Robin.I read In informal school in
+										<span>Dhaka Branch.</span></p>
+								</div>
+							</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 our-childrens-grid">
+					<a href="images/5.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+						<img class="one" src="images/5.jpg" alt=" " title="Science Laboratory" />
+						<div class="b-wrapper">
+							<h2 class="b-animate b-from-left    b-delay03 ">
+
+								<div class="text-info">
+								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
+									<h4>About Robin</h4>
+									<p>I am Robin.I read In informal school in
+										<span>Dhaka Branch.</span></p>
+								</div>
+							</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 our-childrens-grid">
+					<a href="images/6.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+						<img class="one" src="images/6.jpg" alt=" " title="Science Laboratory" />
+						<div class="b-wrapper">
+							<h2 class="b-animate b-from-left    b-delay03 ">
+
+								<div class="text-info">
+								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
+									<h4>About Robin</h4>
+									<p>I am Robin.I read In informal school in
+										<span>Dhaka Branch.</span></p>
+								</div>
+							</h2>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="our-childrens-grids">
+				<div class="col-md-3 our-childrens-grid">
+					<a href="images/7.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+						<img class="one" src="images/7.jpg" alt=" " title="Science Laboratory" />
+						<div class="b-wrapper">
+							<h2 class="b-animate b-from-left    b-delay03 ">
+
+								<div class="text-info">
+								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
+									<h4>About Robin</h4>
+									<p>I am Robin.I read In informal school in
+										<span>Dhaka Branch.</span></p>
+								</div>
+							</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 our-childrens-grid">
+					<a href="images/8.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+						<img class="one" src="images/8.jpg" alt=" " title="Science Laboratory" />
+						<div class="b-wrapper">
+							<h2 class="b-animate b-from-left    b-delay03 ">
+
+								<div class="text-info">
+								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
+									<h4>About Robin</h4>
+									<p>I am Robin.I read In informal school in
+										<span>Dhaka Branch.</span></p>
+								</div>
+							</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 our-childrens-grid">
+					<a href="images/9.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+						<img class="one" src="images/9.jpg" alt=" " title="Science Laboratory" />
+						<div class="b-wrapper">
+							<h2 class="b-animate b-from-left    b-delay03 ">
+
+								<div class="text-info">
+								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
+									<h4>About Robin</h4>
+									<p>I am Robin.I read In informal school in
+										<span>Dhaka Branch.</span></p>
+								</div>
+							</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 our-childrens-grid">
+					<a href="images/10.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+						<img class="one" src="images/10.jpg" alt=" " title="Science Laboratory" />
+						<div class="b-wrapper">
+							<h2 class="b-animate b-from-left    b-delay03 ">
+
+								<div class="text-info">
+								<img class="img-responsive" src="images/eye.png" class="zoom" alt=""/>
+									<h4>About Robin</h4>
+									<p>I am Robin.I read In informal school in
+										<span>Dhaka Branch.</span></p>
+								</div>
+							</h2>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<link rel="stylesheet" href="css/swipebox.css">
+				<script src="js/jquery.swipebox.min.js"></script>
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+					</script>
+
+		-->
+<!-- //our-childrens -->
+<!-- work -->
+	<!-- div class="work">
+		<div class="container">
+			<h3>OUR WORK PROCESS</h3>
+			<div class="work-grids">
+				  <div class="col-md-2 work-grid">
+					<div class="thumbnail">
+						<div class="first-step">
+							<span> </span>
+						</div>
+						<div class="caption">
+							<h4>First step</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								In lobortis</p>
+						</div>
+					</div>
+				  </div>
+				  <div class="col-md-2 work-grid">
+					<div class="thumbnail">
+						<div class="first-step1">
+							<span> </span>
+						</div>
+						<div class="caption">
+							<h4>Second step</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								In lobortis</p>
+						</div>
+					</div>
+				  </div>
+				  <div class="col-md-2 work-grid">
+					<div class="thumbnail">
+						<div class="first-step2">
+							<span> </span>
+						</div>
+						<div class="caption">
+							<h4>Third step</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								In lobortis</p>
+						</div>
+					</div>
+				  </div>
+				  <div class="col-md-2 work-grid">
+					<div class="thumbnail">
+						<div class="first-step3">
+							<span> </span>
+						</div>
+						<div class="caption">
+							<h4>Fourth step</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								In lobortis</p>
+						</div>
+					</div>
+				  </div>
+				  <div class="col-md-2 work-grid">
+					<div class="thumbnail">
+						<div class="first-step4">
+							<span> </span>
+						</div>
+						<div class="caption">
+							<h4>Fifth step</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								In lobortis</p>
+						</div>
+					</div>
+				</div>
+				  <div class="col-md-2 work-grid">
+					<div class="thumbnail">
+						<div class="first-step5">
+							<span> </span>
+						</div>
+						<div class="caption">
+							<h4>Last step</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								In lobortis</p>
+						</div>
+					</div>
+				  </div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //work -->
+<!-- team -->
+	<!-- div id="team" class="team">
+		<div class="container">
+			<h3>MEET OUR TEAM</h3>
+			<div class="team-grids">
+			  <div class="col-md-3 team-grid">
+				<div class="thumbnail team-grid-main">
+				  <img src="images/12.jpg" alt=" " />
+				  <div class="caption pretium">
+					<h4>Munzurul Hasan</h4>
+					<p class="founder">Founder,Alor Bhubon</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis,
+						ante interdum vehicula pretium, dui enim porta lectus, non euismod tortor
+						ante eu libero. Aenean blandit luctus tortor vitae interdum. Etiam egestas
+						purus lorem, eget tempus odio placerat id.</p>
+					<ul>
+						<li><a href="#" class="facebook"> </a></li>
+						<li><a href="#" class="twitter"> </a></li>
+						<li><a href="#" class="g-plus"> </a></li>
+						<li><a href="#" class="in"> </a></li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			   <div class="col-md-3 team-grid">
+					<div class="thumbnail team-grid-main">
+				  <img src="images/13.jpg" alt=" " />
+				  <div class="caption pretium">
+					<h4>Munzurul Hasan</h4>
+					<p class="founder">Founder,Alor Bhubon</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis,
+						ante interdum vehicula pretium, dui enim porta lectus, non euismod tortor
+						ante eu libero. Aenean blandit luctus tortor vitae interdum. Etiam egestas
+						purus lorem, eget tempus odio placerat id.</p>
+					<ul>
+						<li><a href="#" class="facebook"> </a></li>
+						<li><a href="#" class="twitter"> </a></li>
+						<li><a href="#" class="g-plus"> </a></li>
+						<li><a href="#" class="in"> </a></li>
+					</ul>
+				  </div>
+				</div>
+			   </div>
+			    <div class="col-md-3 team-grid">
+					<div class="thumbnail team-grid-main">
+				  <img src="images/14.jpg" alt=" " />
+				  <div class="caption pretium">
+					<h4>Munzurul Hasan</h4>
+					<p class="founder">Founder,Alor Bhubon</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis,
+						ante interdum vehicula pretium, dui enim porta lectus, non euismod tortor
+						ante eu libero. Aenean blandit luctus tortor vitae interdum. Etiam egestas
+						purus lorem, eget tempus odio placerat id.</p>
+					<ul>
+						<li><a href="#" class="facebook"> </a></li>
+						<li><a href="#" class="twitter"> </a></li>
+						<li><a href="#" class="g-plus"> </a></li>
+						<li><a href="#" class="in"> </a></li>
+					</ul>
+				  </div>
+				</div>
+			   </div>
+			    <div class="col-md-3 team-grid">
+					<div class="thumbnail team-grid-main">
+				  <img src="images/11.jpg" alt=" " />
+				  <div class="caption pretium">
+					<h4>Munzurul Hasan</h4>
+					<p class="founder">Founder,Alor Bhubon</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis,
+						ante interdum vehicula pretium, dui enim porta lectus, non euismod tortor
+						ante eu libero. Aenean blandit luctus tortor vitae interdum. Etiam egestas
+						purus lorem, eget tempus odio placerat id.</p>
+					<ul>
+						<li><a href="#" class="facebook"> </a></li>
+						<li><a href="#" class="twitter"> </a></li>
+						<li><a href="#" class="g-plus"> </a></li>
+						<li><a href="#" class="in"> </a></li>
+					</ul>
+				  </div>
+				</div>
+			   </div>
+			   <div class="clearfix"> </div>
+			</div>
+		</div>
+	</div -->
+<!-- //team -->
+<!-- liton -->
+	<!-- div class="liton">
+		<div class="container">
+		  <div class="lton-inf">
+			<div class="wmuSlider example1">
+			   <div class="wmuSliderWrapper">
+				   <article style="position: absolute; width: 100%; opacity: 0;">
+					<div class="banner-wrap">
+						<div class="liton-inf">
+							<div class="liton-fig">
+								<span> </span>
+							</div>
+							<div class="liton-info">
+								<h3>Liton Dev</h3>
+								<p>Volunteer, Porshee Foundation</p>
+							</div>
+							<p class="tortor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis, ante interdum vehicula pretium, dui enim porta
+								lectus, non euismod tortor ante eu libero.</p>
+						</div>
+					</div>
+					</article>
+					<article style="position: absolute; width: 100%; opacity: 0;">
+						<div class="banner-wrap">
+						<div class="liton-inf">
+							<div class="liton-fig1">
+								<span> </span>
+							</div>
+							<div class="liton-info">
+								<h3>Adom Simmy</h3>
+								<p>Volunteer, Porshee Foundation</p>
+							</div>
+							<p class="tortor">Consectetur ipsum dolor sit amet, consectetur adipiscing elit. In lobortis, ante interdum vehicula pretium, dui enim porta
+								lectus, non euismod tortor ante eu libero.</p>
+						</div>
+						</div>
+					</article>
+					<article style="position: absolute; width: 100%; opacity: 0;">
+						<div class="banner-wrap">
+						<div class="liton-inf">
+							<div class="liton-fig2">
+								<span> </span>
+							</div>
+							<div class="liton-info">
+								<h3>Micheal Smith</h3>
+								<p>Volunteer, Porshee Foundation</p>
+							</div>
+							<p class="tortor">Euismod ipsum dolor sit amet, consectetur adipiscing elit. In lobortis, ante interdum vehicula pretium, dui enim porta
+								lectus, non euismod tortor ante eu libero.</p>
+						</div>
+						</div>
+					</article>
+					    <ul class="wmuSliderPagination">
+							<li><a href="#" class="">0</a></li>
+							<li><a href="#" class="">1</a></li>
+							<li><a href="#" class="wmuActive">2</a></li>
+						</ul>
+            </div>
+					<script src="js/jquery.wmuSlider.js"></script>
+					  <script>
+						$('.example1').wmuSlider();
+					 </script>
+				</div>
+			</div>
+		  </div>
+	</div -->
+<!-- //liton -->
+<!-- news -->
+	<!--div id="news" class="news">
+		<div class="container">
+			<h3>NEWS</h3>
+			<div class="news-grids">
+				<div class="col-md-5 news-grid">
+					<div class="news-grd">
+						<img src="images/15.jpg" alt=" " />
+						<div class="video">
+							<a href="#"><img src="images/8.png" alt=" " /></a>
+						</div>
+					</div>
+					<div class="news-grd-text">
+						<p class="date">25 MAY 2015</p>
+						<h4>Why do children end up on the streets?</h4>
+						<p class="children">Children end up on the streets for a mixture of
+						reasons, though poverty is usually at the heart of the problem.
+						In the countries where we work, conflict and poverty combine to
+						force children onto the streets. In many cases a child's family
+						can no longer afford to care for them properly or may need their
+						help to supplement the family income and help put food on the table.</p>
+						<div class="more1">
+							<a href="#" class="hvr-bounce-to-right">Read More</a>
+						</div>
+						<div class="edit">
+							<p>Hasan</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7 news-grid">
+					<div class="news-income">
+						<div class="news-grid-left">
+							<img class="steel" src="images/16.jpg" alt=" " />
+							<div class="gallery">
+								<a href="#"><img src="images/9.png" alt=" " /></a>
+							</div>
+						</div>
+						<div class="news-grid-right">
+							<div class="news-grd-text1">
+								<p class="date">01 DECEMBER 2014</p>
+								<h4>BeReviews was a awesome envent in dhaka</h4>
+								<p class="children">With a blow from the top-maul Ahab knocked
+								off the steel head of the lance, and then handing to the steel</p>
+								<div class="more1">
+									<a href="#" class="hvr-bounce-to-right">Read More</a>
+								</div>
+								<div class="edit">
+									<p>Litoon Dev</p>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="news-income">
+						<div class="news-grid-left">
+							<img class="steel" src="images/17.jpg" alt=" " />
+							<div class="gallery">
+								<a href="#"><img src="images/10.png" alt=" " /></a>
+							</div>
+						</div>
+						<div class="news-grid-right">
+							<div class="news-grd-text1">
+								<p class="date">03 NOVEMBER 2014</p>
+								<h4>Play list of old bangle music and gajal countries</h4>
+								<p class="children">With a blow from the top-maul Ahab knocked
+								off the steel head of the lance, and then handing to the steel</p>
+								<div class="more1">
+									<a href="#" class="hvr-bounce-to-right">Read More</a>
+								</div>
+								<div class="edit">
+									<p>Rabbani</p>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div -->
+<!-- //news -->
+
+<!-- Donation Information -->
+	<div id="donateus" class="contact">
+		<div class="container">
+			<div class="contact-header" id="donateinfo">
+				<h3>Donate Us</h3>
+			</div>
+				<div class="map">
+					<!--iframe src="https://www.google.co.in/maps/place/CIITM,+MHSS+Trust/@23.7960664,86.4382064,17z/data=!3m1!4b1!4m2!3m1!1s0x39f6bc9570702d1f:0xcaa35a968f9cbaad?hl=en&hl=en-IN" frameborder="0" style="border:0"></iframe -->
+
+
+
+					<!--div class="map-color" -->
+						<div class="contact-info" style="float:left;">
+							<div class="col-md-8">
+							<h4>Banking Details</h4>
+							<p>Account Name:- MHSSE&S TRUST</p>
+							<p>Account Number:- 529001010130116 </p>
+							<p>IFSC:- UBIN0552909 </p>
+							<p>Bank Name:UNION BANK OF INDIA ,DGMS HIRAPUR</p>
+								<span>Dhanbad, India</span>
+								<p>E-mail ID:- mhsstrust@gmail.com</p>
+								<p>PAN NO:- AAATM9403F</p>
+								Phone Number:- 0326 231 4311</p>
+							</div>
+
+						</div>
+						<div class="contact-info" style="float:left;">
+							<div class="col-md-10" style="float:left;">
+
+								<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required id="dname">
+								<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required id="demail">
+								<input type="text" value="Amount" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Amount';}" required id="damount">
+								<p>
+								<input type="text" value="Mobile Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile Number';}" required id="dmno">
+								<textarea type="text"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required id="dmessage">Message...</textarea>
+								<input type="button" value="Save My Donation Information" onclick="savedonation();">
+								<div id="divdonation"></div>
+							</div>
+
+						</div>
+
+						<!--div class="clearfix"> </div-->
+					<!-- /div -->
+				</div>
+
+		</div>
+	</div>
+<!-- //Donation Information -->
+
+
+<!-- contact -->
+	<div id="contact" class="contact">
+		<div class="container">
+			<div class="contact-header">
+				<h3>CONTACT US</h3>
+			</div>
+				<div class="map">
+					<!--iframe src="https://www.google.co.in/maps/place/CIITM,+MHSS+Trust/@23.7960664,86.4382064,17z/data=!3m1!4b1!4m2!3m1!1s0x39f6bc9570702d1f:0xcaa35a968f9cbaad?hl=en&hl=en-IN" frameborder="0" style="border:0"></iframe -->
+
+
+
+					<!--div class="map-color" -->
+						<div class="contact-info" style="float:left;">
+							<div class="col-md-8">
+							<h4>Contact Info</h4>
+							<p>Maharshi Hariram Sharan Shastri Educational & Social Trust,</p>
+							<p>CIITM (campus),Harimandir Road, Hirapur,
+								<span>Dhanbad,jharkhand,India</span>
+								Phone Number: 0326 231 1314</p>
+							</div>
+
+						</div>
+						<div class="contact-info" style="float:left;">
+							<div class="col-md-10" style="float:left;">
+
+									<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required name="name" id="name">
+									<input type="email" name="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required id="email">
+									<input type="text" name="subject" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}" required id="subject">
+									<p><input type="text" name="mobileno" value="Mobile Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile Number';}" required id="mno"></p>
+									<textarea type="text"  name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required id="message">Message...</textarea>
+									<input type="button" value="Send Message" onclick="sendmail();">
+									<div id="divmailreply"></div>
+							</div>
+
+						</div>
+
+						<!--div class="clearfix"> </div-->
+					<!-- /div -->
+				</div>
+
+		</div>
+	</div>
+<!-- //contact -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grids">
+				<div class="footer-grid-left">
+					<a href="index.html"><!img src="" alt=" " /><font color="orange">HOME</font></a>
+				</div>
+				<div class="footer-grid-center">
+					<p>Organised By &nbsp:-<a href="http://www.ciitm.in/"> <em>Maharshi</em> <em>Hariram</em> <em>Saran</em> <em>Sashtri</em> <em>Educational</em> <em>and</em> <em>Social</em> <em>Trust</em></a></p>
+					<p>Developed By &nbsp:-<a href="#"> <em>Prabhat</em> <em>kumar</em> <em>Burnwal</em></a>  <font color="gold">Shyamdih more,Gopalpur,Katras Bazaar</font></p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Contact No:-  <font color="gold"><b>+91</b> <em><strong>9693211251</strong></em></font></p>
+					</div>
+				<div class="footer-grid-right">
+					<ul>
+						<li><a href="https://www.facebook.com/MHSSTRUST/?fref=ts" class="f"> </a></li>
+						<li><a href="https://twitter.com/mhsstrust?s=9" class="t"> </a></li>
+						<li><a href="http://mhsstrust.blogspot.in/?m=1" class="g"> </a></li>
+						<li><a href="#" class="i"> </a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

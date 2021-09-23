@@ -1,0 +1,3 @@
+create database mhsst;
+CREATE USER 'mhsst'@'localhost' IDENTIFIED BY '***';GRANT USAGE ON *.* TO 'mhsst'@'localhost' IDENTIFIED BY '***' WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;GRANT ALL PRIVILEGES ON `mhsst`.* TO 'mhsst'@'localhost';
+create table donation_information(did int unsigned primary key,dname varchar(100),demail varchar(100),dmno varchar(10),damount float(10,2),dmessage varchar(200))
